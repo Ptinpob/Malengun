@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content = "width=device-width,initial-scale=1.0">
+    <title>MALENGUN</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">MALENGUN</a>
+        <ul class="nav">
+            <li><a href="#home">หน้าหลัก</a></li>
+            <li><a href="#about">เกี่ยวกับเรา</a></li>
+            <li><a href="#games">เกม</a></li>
+            <li><a href="#tournaments">ทัวร์นาเมนต์</a></li>
+            <li><a href="#contact">ติดต่อเรา</a></li>
+        </ul>
+        <div class="action">
+             <div class ="searchBx">
+                <a href="#"><i class='bx bx-search'></i></a>
+                <input type="text" placeholder="Search Game"
+            </div>
+        </div>
+        <div class ="toggleMenu" onclick="toggleMenu();"></div>
+    </header>
+
+     <!--Home Banner-->
+     <div class="banner animeX" id="home">
+        <div class="bg">
+        <div class="content">
+          <h2>A New Party <br> 
+            For Game Lover</h2>
+            <p>ปาร์ตี้สำหรับการเล่นเกมเเห่งใหม่!!</p>
+            <a href="#" class="bth">Join Now</a>
+        </div>
+         <img src="img/jett.png">
+      </div>
+    </div>
+
+    <!--About-->
+    <div class="about animeX" id="about">
+         <div class="contentBx">
+            <h2>About Me</h2>
+            <p> 
+                <br>เป็นเว็บไซต์เเห่งใหม่ในการหาปาร์ตี้เพื่อพร้อมลุยเกมกับคนที่คุณไม่เคยรู้จักมาก่อน!!
+                <br>พัฒนาโดย นาย ติณณภพ นวจิตไพบูลย์ 
+            </p>
+            <a href="#">Read More</a>
+         </div>
+         <img src="img/IMG_9482-removebg-preview.png">
+    </div>
+    
+    <!--Games-->
+    <div class="games animeX" id="games">
+       <h1>Popular Games</h1>
+       <ul>
+        <li class="list active" data-filter="all">All</li>
+        <li class="list" data-filter="pc">PC games</li>
+        <li class="list" data-filter="mobile">Mobile games</li>
+    </ul>
+      <div class="cardBx">
+        <div class="card" data-item="pc">
+          <img src="img/valo1.png">
+          <div class="content">
+               <h4>Valorant</h4>
+               <div class="progress-line"><span></span></div>
+               <div class="info">
+                    <p>Online<br><span>5</span></p>
+                    <a href="https://playvalorant.com/th-th/">Play Now</a>
+               </div>
+           </div>
+         </div>
+
+         <div class="card" data-item="pc">
+            <img src="img/ov2.jfif">
+            <div class="content">
+                 <h4>OverWatch2</h4>
+                 <div class="progress-line"><span></span></div>
+                 <div class="info">
+                      <p>Online<br><span>1</span></p>
+                      <a href="https://overwatch.blizzard.com/en-us/">Play Now</a>
+                 </div>
+             </div>
+           </div>
+           
+           <div class="card" data-item="pc">
+            <img src="img/gta.jpg">
+            <div class="content">
+                 <h4>Grand Theft Auto</h4>
+                 <div class="progress-line"><span></span></div>
+                 <div class="info">
+                      <p>Online<br><span>4</span></p>
+                      <a href="https://www.rockstargames.com/gta-v">Play Now</a>
+                 </div>
+             </div>
+           </div>
+
+           <div class="card" data-item="pc">
+            <img src="img/star.jpg">
+            <div class="content">
+                 <h4>Stardew Valley</h4>
+                 <div class="progress-line"><span></span></div>
+                 <div class="info">
+                      <p>Online<br><span>2</span></p>
+                      <a href="https://www.stardewvalley.net/">Play Now</a>
+                 </div>
+             </div>
+           </div>
+
+           <div class="card" data-item="pc">
+            <img src="img/sot.jpg">
+            <div class="content">
+                 <h4>Sea of thieve</h4>
+                 <div class="progress-line"><span></span></div>
+                 <div class="info">
+                      <p>Online<br><span>4</span></p>
+                      <a href="https://www.seaofthieves.com/">Play Now</a>
+                 </div>
+             </div>
+           </div>
+
+           <div class="card" data-item="pc">
+            <img src="img/Minecraft.jpg">
+            <div class="content">
+                 <h4>Minecraft</h4>
+                 <div class="progress-line"><span></span></div>
+                 <div class="info">
+                      <p>Online<br><span>5</span></p>
+                      <a href="https://www.minecraft.net/en-us">Play Now</a>
+                 </div>
+             </div>
+           </div>
+
+           <div class="card" data-item="mobile">
+            <img src="img/freefire.jfif">
+            <div class="content">
+                 <h4>Free Fire</h4>
+                 <div class="progress-line"><span></span></div>
+                 <div class="info">
+                      <p>Online<br><span>14</span></p>
+                      <a href="https://ff.garena.com/th/">Play Now</a>
+                 </div>
+             </div>
+           </div>
+
+           <div class="card" data-item="mobile">
+            <img src="img/pubg.png">
+            <div class="content">
+                 <h4>PUBG Mobile</h4>
+                 <div class="progress-line"><span></span></div>
+                 <div class="info">
+                      <p>Online<br><span>10</span></p>
+                      <a href="https://www.pubgmobile.com/th/home.shtml">Play Now</a>
+                 </div>
+             </div>
+           </div>
+
+           <div class="card" data-item="mobile">
+            <img src="img/rov.png">
+            <div class="content">
+                 <h4>ROV</h4>
+                 <div class="progress-line"><span></span></div>
+                 <div class="info">
+                      <p>Online<br><span>50</span></p>
+                      <a href="https://rov.in.th/">Play Now</a>
+                 </div>
+             </div>
+           </div>
+
+           <div class="card" data-item="mobile">
+            <img src="img/pes.jpg">
+            <div class="content">
+                 <h4>PES2024</h4>
+                 <div class="progress-line"><span></span></div>
+                 <div class="info">
+                      <p>Online<br><span>20</span></p>
+                      <a href="https://www.konami.com/efootball/en/">Play Now</a>
+                 </div>
+             </div>
+           </div>
+
+           <div class="card" data-item="mobile">
+            <img src="img/call.png">
+            <div class="content">
+                 <h4>Call Of Duty</h4>
+                 <div class="progress-line"><span></span></div>
+                 <div class="info">
+                      <p>Online<br><span>15</span></p>
+                      <a href="https://www.callofduty.com/mobile">Play Now</a>
+                 </div>
+             </div>
+           </div>
+
+           <div class="card" data-item="mobile">
+            <img src="img/ro.png">
+            <div class="content">
+                 <h4>Roblox</h4>
+                 <div class="progress-line"><span></span></div>
+                 <div class="info">
+                      <p>Online<br><span>70</span></p>
+                      <a href="https://www.roblox.com/">Play Now</a>
+                 </div>
+             </div>
+           </div>
+       </div>
+    </div>
+
+    <!--Tournaments-->
+    <div class="tournaments animeX" id="tournaments">
+        <h1>Live Tournaments</h1>
+        <div class="boxBx">
+            <div class="box">
+                <img src="img/VCT-Season-24.png">
+                <div class="content">
+                    <h4><span>50</span> Match in progress...</h4>
+                    <p> 
+                        ซีรีส์ทัวร์นาเมนต์ ESports ที่มีการแข่งขันระดับโลก สำหรับวิดีโอเกม Valorant ซึ่งจัดโดย Riot Games ซึ่งเป็นผู้พัฒนาเกม ซีรีส์นี้จัดกิจกรรมหลายรายการตลอดแต่ละฤดูกาลโดยปิดท้ายด้วยValorant Champions 
+                    </p>
+                    <div class="btn">
+                        <a href="#" class="watch">Watch</a>
+                        <a href="#" class="join">Join Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/pubg-tournaments.jpg">
+                <div class="content">
+                    <h4><span>50</span> Match in progress...</h4>
+                    <p>
+                        PUBG Global Series 3 2024 ถือเป็นการแข่งขันชิงแชมป์รายการใหญ่รายการแรกของฤดูกาลแข่งขันปี 2024 ซึ่งจัดโดยPUBG Corporation
+                        เชิญคือทีม GPT และ 14 ทีมที่ดีที่สุดตลอดลีกเฟส 1
+                    </p>
+                    <div class="btn">
+                        <a href="#" class="watch">Watch</a>
+                        <a href="#" class="join">Join Now</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="box">
+                <img src="img/rovtou.jpg">
+                <div class="content">
+                    <h4><span>90</span> Match in progress...</h4>
+                    <p>
+                        ศึกการแข่งขันระดับอาชีพของ RoV รายการแรกประเดิมปี 2024 อย่าง RoV Pro League 2024 Summer หรือ RPL 2024 Summer กำลังจะเริ่มต้นขึ้นในอีกไม่ถึงเดือน  โดย 9 ทีมชั้นนำของประเทศไทยจะลงแข่งขันเพื่อแย่งชิงความเป็นหนึ่ง 
+                    </p>
+                    <div class="btn">
+                        <a href="#" class="watch">Watch</a>
+                        <a href="#" class="join">Join Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div class="contact animeX" id="contact" >
+        <img src="img/me.jpg">
+        <div class="form">
+            <h1>Contact Me</h1>
+            <div class="inputBx">
+                <p>Enter Name</p>
+                <input type="text" placeholder="Full Name">
+            </div>
+            <div class="inputBx">
+                <p>Enter Email</p>
+                <input type="text" placeholder="Email">
+            </div>
+            <div class="inputBx">
+                <p>Message</p>
+                <textarea placeholder="Type here..."></textarea>
+            </div>
+            <div class="inputBx">
+                <input type="submit" name="Submit">
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+    <footer>
+        <div class="info">
+             <a href="#" class="logo">MALENGUN</a>
+             <p><i class='bx bx-copyright'></i>2024 All Rigth Reserved</p>
+             <ul>
+                <li><a href="https://www.facebook.com/"><i class='bx bxl-facebook' ></i></a></li>
+                <li><a href="#"><i class='bx bxl-instagram' ></i></a></li>
+                <li><a href="#"><i class='bx bxs-envelope' ></i></i></a></li>
+             </ul>
+        </div>
+    </footer>
+    
+    
+    
+    <script>
+        /*Sticky NavBar*/
+        window.addEventListener('scroll',function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky',window.scrollY > 0);
+        }); 
+        
+        /*Responsive NavBar*/
+
+        function toggleMenu(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const nav = document.querySelector('.nav');
+            toggleMenu.classList.toggle('active')
+            nav.classList.toggle('active')
+        }
+
+        /* Scrolling Ani Eff*/
+        window.addEventListener('scroll',function(){
+            var anime = document.querySelectorAll('.animeX');
+
+            for(var s = 0; s < anime.length; s++){
+                var windowheight = window.innerHeight;
+                var animetop = anime[s].getBoundingClientRect().top;
+                var animepoint = 150;
+
+                if(animetop < windowheight - animepoint){
+                    anime[s].classList.add('active');
+                }
+                else{
+                    anime[s].classList.remove('active');
+                }
+            }
+        })
+
+
+
+
+        /* Filterable cards*/
+
+        let list = document.querySelectorAll('.list');
+        let card = document.querySelectorAll('.card');
+
+        for(let i = 0;i < list.length; i++){
+            list[i].addEventListener('click',function(){
+                for (let j = 0; j < list.length ; j++){
+                    list[j].classList.remove('active');
+                }
+                this.classList.add('active');
+
+                let dataFilter = this.getAttribute('data-filter');
+
+                for(let k = 0 ; k < card.length ; k++)
+                {
+                    card[k].classList.remove('active');
+                    card[k].classList.add('hide');
+
+                    if (card[k].getAttribute('data-item') == dataFilter || dataFilter == 'all'){
+                        card[k].classList.remove('hide');
+                        card[k].classList.add('active');
+                    }
+                }
+            })
+        }
+    </script>
+</body>
+</html>
